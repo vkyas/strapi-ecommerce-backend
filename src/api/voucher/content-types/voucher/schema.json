@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vouchers",
+  "info": {
+    "singularName": "voucher",
+    "pluralName": "vouchers",
+    "displayName": "Voucher",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code_voucher": {
+      "type": "string",
+      "unique": true
+    },
+    "potongan_persen": {
+      "type": "integer"
+    }
+  }
+}

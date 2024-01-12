@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "total_price": {
+      "type": "decimal"
+    },
+    "delivery_address": {
+      "type": "string"
+    },
+    "shipping_cost": {
+      "type": "decimal"
+    },
+    "status_order": {
+      "type": "enumeration",
+      "enum": [
+        "waiting_payment",
+        "success_payment",
+        "error_payment"
+      ]
+    },
+    "discount": {
+      "type": "float"
+    },
+    "shopping_fee": {
+      "type": "float"
+    },
+    "voucher_data": {
+      "type": "json"
+    },
+    "raja_ongkir": {
+      "type": "json"
+    },
+    "berat_semua_barang": {
+      "type": "float"
+    },
+    "items": {
+      "type": "json"
+    },
+    "userId": {
+      "type": "integer"
+    }
+  }
+}
